@@ -1,6 +1,9 @@
 # COMPANY HERO TEST - VAGA DJANGO
 Um app simples feito com django e restframework
 
+APP DISPONÍVEL NO LINK:
+https://company-hero-test-python.herokuapp.com/
+
 ## Começando
 
 ### Pré-requisitos
@@ -109,6 +112,8 @@ Nessa opção retorna os usuários ligados a uma empresa.
 
 # COMPANY HERO TEST - ENGLISH
 A simple app made with Django and RestFramework.
+
+APP AVALIABLE ON: https://company-hero-test-python.herokuapp.com/
 
 ## Starting
 
