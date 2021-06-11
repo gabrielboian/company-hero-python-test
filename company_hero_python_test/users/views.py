@@ -54,6 +54,7 @@ class UserView(APIView, UpdateModelMixin):
         try:
             user = User.objects.get(email=request.data['email'])
             serializer = UserUpdateSerializer(user, data=request.data, partial=True)
+            print(serializer)
             if serializer.is_valid():
                 serializer.save()
                 return Response(serializer.data, status=status.HTTP_200_OK)

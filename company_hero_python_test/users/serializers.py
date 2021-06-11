@@ -31,7 +31,7 @@ class UserUpdateSerializer(serializers.ModelSerializer):
     companies = serializers.CharField()
     
     def validate(self, data):
-        if not Company.objects.get(name=data.get('companies')):
+        if not Company.objects.filter(name=data.get('companies')):
             raise serializers.ValidationError({
                 'error': 'Empresa não existe em nosso banco de dados'
             })
