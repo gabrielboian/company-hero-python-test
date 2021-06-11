@@ -8,7 +8,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['company-hero-test.herokuapp.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
