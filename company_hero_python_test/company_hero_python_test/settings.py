@@ -1,4 +1,5 @@
 from pathlib import Path
+import django_heroku
 import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -96,3 +97,6 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'users.User'
+
+
+django_heroku.settings(locals())
