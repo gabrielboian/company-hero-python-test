@@ -44,8 +44,8 @@ class UserView(APIView, UpdateModelMixin):
                 return Response(context, status=status.HTTP_400_BAD_REQUEST)
         
         context = {
-            'error': serializer.errors,
-            'success': False
+            'success': False,
+            'error': serializer.errors
         }  
         return Response(context, status=status.HTTP_400_BAD_REQUEST)
     
